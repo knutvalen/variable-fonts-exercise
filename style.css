@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -10,6 +11,7 @@ html {
   --color-gray-700: hsl(270deg 12% 58%);
   --color-gray-900: hsl(270deg 22% 12%);
   --color-gray-1000: hsl(270deg 20% 8%);
+  --color-white: hsl(0, 0%, 100%);
 }
 
 html,
@@ -45,11 +47,25 @@ footer {
 
 .logo {
   font-size: 2rem;
+  font-weight: 900;
   margin-bottom: 16px;
+  color: var(--color-white);
+}
+
+.sublogo {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-gray-500);
+}
+
+.person-name {
+  font-weight: 700;
+  color: var(--color-gray-300);
 }
 
 .legal {
   margin-top: auto;
+  color: var(--color-gray-700);
 }
 
 .links {
@@ -61,6 +77,7 @@ footer {
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--color-gray-700);
 }
 
 .links li {
@@ -73,6 +90,8 @@ footer {
 
 .links a {
   text-decoration: none;
+  font-weight: 500;
+  color: var(--color-gray-100);
 }
 
 main {
